@@ -1,11 +1,16 @@
 import React from 'react'
-import '../styles/index.scss'
+import '../styles'
 
-import Home from './Home'
+// import Home from './Home'
+import Header from './Header'
+import SideBar from './SideBar'
+import Content from '../routes'
 
 const Root = () => (
   <div>
-    <Home />
+    <Header />
+    <Content />
+    <SideBar />
   </div>
 )
 

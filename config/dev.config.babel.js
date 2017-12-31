@@ -2,36 +2,41 @@ import { CONFIG, APP_PATH } from './config'
 import { HotModuleReplacementPlugin, NamedModulesPlugin } from 'webpack'
 import merge from 'webpack-merge'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 export default merge({
   entry: [
     'react-hot-loader/patch',
   ],
 
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval',
 
   module: {
     rules: [{
-      test: /\.(css|scss|sass)$/,
-      use: [{
-        loader: 'style-loader'
-      }, {
-        loader: 'css-loader',
-        query: {
-          modules: true,
-          localIdentName: '[local]__[path][name]__[hash:base64:5]'
-        }
-      }, {
-        loader: 'sass-loader'
-      }, {
-        loader: 'postcss-loader'
-      }
-    ],
-      // exclude: /node_modules/
-    }]
+      test: /\.css$/,
+      use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: 'css-loader',
+      })),
+    },]
   },
+  // module: {
+  //   rules: [{
+  //     test: /\.css$/,
+  //     use: [{
+  //       loader: 'style-loader'
+  //     }, {
+  //       loader: 'css-loader',
+  //       query: {
+  //         modules: true,
+  //         localIdentName: '[local]__[path][name]__[hash:base64:5]'
+  //       }
+  //     }]
+  //   }]
+  // },
 
   plugins: [
+    new ExtractTextPlugin('styles.css'),
     new HotModuleReplacementPlugin(),
     new NamedModulesPlugin(),
     new HtmlWebpackPlugin({
