@@ -1,4 +1,4 @@
-html, body, #root, #root div, #grid-container {
+html, body, #root {
   width: 100vw;
   min-height: 100vh !important;
   height: 100vh !important;
@@ -6,27 +6,40 @@ html, body, #root, #root div, #grid-container {
   padding: 0;
 }
 
-#root #stage {
+#root {
   background-color: black;
   display: grid;
-  grid-template-columns: auto 325px;
-  grid-template-rows: 75px auto 100px;
-}
-
-header {
-  grid-column: 1 / 3;
-  background-color: darkorange;
-}
-
-nav {
-  background-color: darkslateblue;
+  /* grid-template-rows: 1fr 50px; */
+  grid-template-columns: 1fr 350px;
 }
 
 main {
-  grid-row: 2 / span 2;
+  background-color: darkorange;
+}
+
+aside {
+  background-color: darkslateblue;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+#sidebar-photo-container {
   background-color: darkolivegreen;
 }
 
-footer {
+#sidebar-menu-container {
   background-color: darkred;
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 100px;
+}
+
+.sidebar-menu-item {
+  background-color: purple;
+  /* height: 80%; */
+  border: 1px solid black;
+}
+
+#sidebar-footer {
+  background-color: white;
 }
