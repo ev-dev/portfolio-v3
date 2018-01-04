@@ -6,11 +6,8 @@ html, body, #root, #root div, #grid-container {
   padding: 0;
 }
 
-#root div {
+#root #stage {
   background-color: black;
-}
-
-#grid-container {
   display: grid;
   grid-template-columns: auto 325px;
   grid-template-rows: 75px auto 100px;
