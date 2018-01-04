@@ -1,15 +1,14 @@
 import React from 'react'
 import '../styles'
 
-
-import Header from './Header'
 import SideBar from './SideBar'
-import Content from './Content'
 // import Content from '../routes'
+import Content from './Home'
 
-const Root = () => [
-  <Content />,
-  <SideBar />
-]
+const Root = () =>
+  <div id='root-child'>
+    <Content />
+    <SideBar />
+  </div>
 
 export default Root

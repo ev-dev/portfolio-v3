@@ -1,4 +1,4 @@
-html, body, #root {
+html, body, #root, #root-child {
   width: 100vw;
   min-height: 100vh !important;
   height: 100vh !important;
@@ -6,21 +6,18 @@ html, body, #root {
   padding: 0;
 }
 
-#root {
+#root-child {
   background-color: black;
   display: grid;
   /* grid-template-rows: 1fr 50px; */
   grid-template-columns: 1fr 350px;
 }
 
-main {
-  background-color: darkorange;
-}
-
 aside {
   background-color: darkslateblue;
   display: grid;
   grid-template-rows: 1fr 2fr;
+  z-index: 0;
 }
 
 #sidebar-photo-container {
@@ -42,4 +39,8 @@ aside {
 
 #sidebar-footer {
   background-color: white;
+}
+
+main {
+  background-color: darkorange;
 }
