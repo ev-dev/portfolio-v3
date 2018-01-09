@@ -18,29 +18,33 @@ aside {
   height: 100vh !important;
   background-color: darkslateblue;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 2.8fr;
   z-index: 0;
 }
 
 #sidebar-photo-container {
-  background-color: rgb(205, 211, 199);
+  background-color: rgb(235, 237, 234);
   border-bottom: 1px solid #1C7E7B;
 }
 
 #sidebar-menu-container {
   background-color: darkred;
-  height: 100% !important;
+  /* height: 100% !important; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .sidebar-menu-item {
-  background-color: #97B4A5;
+  background-color: rgb(209, 221, 215);
   border: 1px solid #72A298;
-  height: 20%;
+  /* height: 20%; */
   text-align: center;
+  padding-top: 45%;
+  /* padding-bottom: 15%; */
 }
 
 #sidebar-footer {
-  background-color: #499189;
+  background-color: rgb(201, 179, 155);
 }
 
 main {
@@ -57,6 +61,7 @@ main {
 #sidebar-img {
   /* height: 70%; */
   width: 50% !important;
+  border: 0.3px solid #499189;
   border-radius: 100%;
   margin-top: 10% !important;
   margin-left: 24.3% !important;

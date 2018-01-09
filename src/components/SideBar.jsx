@@ -5,7 +5,7 @@ const SideBar = () => (
     <div id='sidebar-photo-container'>
       <div id='sidebar-photo-span'>
         <img id='sidebar-img' src='me_thumb.jpg' />
-        <h1 id='sidebar-title'>Evan</h1>
+        <h1 id='sidebar-title'>Evan Reed</h1>
       </div>
     </div>
     <div id='sidebar-menu-container'>
