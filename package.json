@@ -19,6 +19,18 @@
   ],
   "author": "ev-dev",
   "license": "MIT",
+  "@std/esm": {
+    "esm": "all",
+    "cjs": {
+      "interop": true,
+      "namedExports": true,
+      "paths": true,
+      "vars": true
+    },
+    "debug": true,
+    "sourceMap": true,
+    "warnings": false
+  },
   "dependencies": {
     "babel-preset-react-app": "^3.1.0",
     "babel-runtime": "^6.26.0",
@@ -29,6 +41,7 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
+    "@std/esm": "^0.19.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -40,9 +53,12 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
     "http-server": "^0.10.0",
+    "nodemon": "^1.14.9",
     "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7",
+    "webpack-livereload-plugin": "^1.0.0",
     "webpack-merge": "^4.1.1"
   }
 }

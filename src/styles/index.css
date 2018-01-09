@@ -14,6 +14,8 @@ html, body, #root, #root-child {
 }
 
 aside {
+  min-height: 100vh !important;
+  height: 100vh !important;
   background-color: darkslateblue;
   display: grid;
   grid-template-rows: 1fr 2fr;
@@ -21,26 +23,45 @@ aside {
 }
 
 #sidebar-photo-container {
-  background-color: darkolivegreen;
+  background-color: rgb(205, 211, 199);
+  border-bottom: 1px solid #1C7E7B;
 }
 
 #sidebar-menu-container {
   background-color: darkred;
-  display: grid;
-  grid-row-gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 100px;
+  height: 100% !important;
 }
 
 .sidebar-menu-item {
-  background-color: purple;
-  /* height: 80%; */
-  border: 1px solid black;
+  background-color: #97B4A5;
+  border: 1px solid #72A298;
+  height: 20%;
+  text-align: center;
 }
 
 #sidebar-footer {
-  background-color: white;
+  background-color: #499189;
 }
 
 main {
   background-color: darkorange;
 }
+
+#sidebar-photo-span h1 {
+  font-family: "Arial";
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgb(16, 40, 37);
+}
+
+#sidebar-img {
+  /* height: 70%; */
+  width: 50% !important;
+  border-radius: 100%;
+  margin-top: 10% !important;
+  margin-left: 24.3% !important;
+}
+
+/* #sidebar-title [
+
+] */

@@ -4,11 +4,11 @@ const fs = require('fs')
 
 express()
   .get('/bundle.js', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'dist', 'bundle.js'))
+    res.sendFile(path.join(__dirname, '..', '..', 'dist', 'bundle.js'))
   })
   .use((req, res, next) => {
     if (path.extname(req.path).length > 0) {
-      const filePath = path.join(__dirname, '..', 'dist', req.path)
+      const filePath = path.join(__dirname, '..', '..', 'dist', req.path)
       fs.stat(filePath, (err, data) => {
         if (err) throw new Error('No file found...' + err)
         else res.sendfile(filePath)
@@ -18,7 +18,7 @@ express()
     }
   })
   .get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'))
+    res.sendFile(path.join(__dirname, '..', '..', 'dist', 'index.html'))
   })
   .listen(3000, () => {
     console.log(`

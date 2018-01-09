@@ -12,13 +12,19 @@ export default merge({
   devtool: 'eval',
 
   module: {
-    rules: [{
-      test: /\.css$/,
-      use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: 'css-loader',
-      })),
-    },]
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader',
+        }))
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        loader: require.resolve('url-loader')
+      }
+    ]
   },
   // module: {
   //   rules: [{
