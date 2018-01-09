@@ -12,9 +12,12 @@ const Home = () => (
         <div className='layer'></div>
         <div className='layer fill'></div>
       </div>
-      <div className='content'>
+      <div id='name-and-title' className='content'>
         <h1>Evan Reed</h1>
         <p>Fullstack Developer</p>
+      </div>
+      <div className='content'>
+        <p id='mission-statement' className='ital'>I strive to contribute to creative and intellectual communities through the toolsets of Software Engineering & Design.</p>
       </div>
     </div>
   </main>

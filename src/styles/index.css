@@ -67,6 +67,16 @@ main {
   margin-left: 24.3% !important;
 }
 
-/* #sidebar-title [
+#name-and-title {
+  
+}
 
-] */
+.ital {
+  font-style: italic;
+}
+
+#mission-statement {
+  text-align: center;
+  width: 40%;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
