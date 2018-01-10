@@ -11,7 +11,7 @@ express()
       const filePath = path.join(__dirname, '..', '..', 'dist', req.path)
       fs.stat(filePath, (err, data) => {
         if (err) throw new Error('No file found...' + err)
-        else res.sendfile(filePath)
+        else res.sendFile(filePath)
       })
     } else {
       next(null)

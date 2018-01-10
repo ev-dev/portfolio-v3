@@ -37,10 +37,12 @@ aside {
 .sidebar-menu-item {
   background-color: rgb(209, 221, 215);
   border: 1px solid #72A298;
-  /* height: 20%; */
   text-align: center;
   padding-top: 45%;
-  /* padding-bottom: 15%; */
+}
+
+.sidebar-menu-item:hover {
+  background-color: rgb(160, 172, 166);
 }
 
 #sidebar-footer {
@@ -75,8 +77,23 @@ main {
   font-style: italic;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #mission-statement {
   text-align: center;
   width: 40%;
-  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+
+#sidebar-title {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sidebar-link {
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
 }
