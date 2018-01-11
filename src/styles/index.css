@@ -14,11 +14,11 @@ html, body, #root, #root-child {
   }
 }
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 768px) {
   #root-child {
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 4fr 1fr;
   }
 }
 
@@ -100,10 +100,18 @@ a {
 }
 
 .sidebar-link {
-  margin-top: 13%;
+  margin-top: 2em;
   letter-spacing: 3px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
+}
+
+.sidebar-item-container {
+  padding: 5% 2%;
+}
+
+.sidebar-icon {
+
 }
 
 #homepage-links {
@@ -180,7 +188,7 @@ a {
 
 
 /*--------------------*/
-#custom-burger-container {
+#nav-container {
   height: 8%;
   width: 100% !important;
   position: fixed;
@@ -195,23 +203,23 @@ a {
   grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr;
 }
 
-#burger-home {
+#nav-home {
   /* background-color: red; */
   /* border-right: 1px solid black; */
 }
 
-.burger-item {
+.nav-item {
   /* background-color: blue; */
   text-align: center;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 0.25px solid rgb(127, 129, 126);
+  /* border-right: 0.25px solid black; */
 }
 
-.burger-item:active {
+.nav-item:active {
   background-color: yellow;
 }
 
-.burger-item-icon {
+.nav-item-icon {
   width: 100%;
   margin-left: 28%;
   margin-right: 25%;
@@ -219,7 +227,7 @@ a {
   margin-bottom: 5%;
 }
 
-.burger-item-text {
+.nav-item-text {
   font-family: Arial;
   font-size: 0.75em;
   letter-spacing: 2px;

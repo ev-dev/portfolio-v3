@@ -20,9 +20,12 @@ const SideBar = () => (
         </p>
       </Link>
       <Link to='/skills' className='sidebar-menu-item'>
-        <p className='sidebar-link'>
-          Skills
-        </p>
+        <span className='sidebar-item-container'>
+          <i className='fas fa-lg fa-tasks sidebar-icon' />
+          <p className='sidebar-link'>
+            Skills
+          </p>
+        </span>
       </Link>
       <Link to='/projects' className='sidebar-menu-item'>
         <p className='sidebar-link'>

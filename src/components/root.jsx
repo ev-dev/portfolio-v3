@@ -4,7 +4,7 @@ import { layoutGenerator } from 'react-break'
 
 import '../styles'
 import SideBar from './SideBar'
-import CustomBurger from './CustomBurger'
+import NavMenu from './NavMenu'
 import Home from './Home'
 import Skills from './Skills'
 import Projects from './Projects'
@@ -24,7 +24,7 @@ const Root = () => (
   <BrowserRouter>
     <div id='root-child'>
       <OnAtMostPhablet>
-        <Route render={props => <CustomBurger {...props} />} />
+        <Route render={props => <NavMenu {...props} />} />
       </OnAtMostPhablet>
 
       <Switch>
