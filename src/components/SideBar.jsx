@@ -15,29 +15,29 @@ const SideBar = () => (
     </div>
     <div id='sidebar-menu-container'>
       <Link to='/about' className='sidebar-menu-item'>
-        <span className='sidebar-link'>
+        <p className='sidebar-link'>
           About
-        </span>
+        </p>
       </Link>
       <Link to='/skills' className='sidebar-menu-item'>
-        <span className='sidebar-link'>
+        <p className='sidebar-link'>
           Skills
-        </span>
+        </p>
       </Link>
       <Link to='/projects' className='sidebar-menu-item'>
-        <span className='sidebar-link'>
+        <p className='sidebar-link'>
           Projects
-        </span>
+        </p>
       </Link>
       <Link to='/blog' className='sidebar-menu-item'>
-        <span className='sidebar-link'>
+        <p className='sidebar-link'>
           Blog
-        </span>
+        </p>
       </Link>
       <Link to='/contact' id='sidebar-footer' className='sidebar-menu-item'>
-        <span className='sidebar-link'>
+        <p className='sidebar-link'>
           Contact
-        </span>
+        </p>
       </Link>
     </div>
   </aside>

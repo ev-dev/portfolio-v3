@@ -10,7 +10,7 @@ express()
     if (path.extname(req.path).length > 0) {
       const filePath = path.join(__dirname, '..', '..', 'dist', req.path)
       fs.stat(filePath, (err, data) => {
-        if (err) throw new Error('No file found...' + err)
+        if (err) console.error('No file found...' + err)
         else res.sendFile(filePath)
       })
     } else {

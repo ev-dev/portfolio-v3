@@ -1,16 +1,25 @@
 html, body, #root, #root-child {
-  width: 100vw;
+  min-width: 100vw !important;
+  width: 100vw !important;
   min-height: 100vh !important;
   height: 100vh !important;
   margin: 0;
   padding: 0;
+  /* background-color: #66988d; */
 }
 
-#root-child {
-  background-color: black;
-  display: grid;
-  /* grid-template-rows: 1fr 50px; */
-  grid-template-columns: 1fr 350px;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #root-child {
+    width: 100vw !important;
+  }
+}
+
+@media only screen and (min-width : 1224px) {
+  #root-child {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+  }
 }
 
 aside {
@@ -20,11 +29,12 @@ aside {
   display: grid;
   grid-template-rows: 1fr 2.8fr;
   z-index: 0;
+  box-shadow: -30px 0px 30px 5px rgba(0, 0, 0, 0.25);
 }
 
 #sidebar-photo-container {
   background-color: rgb(235, 237, 234);
-  border-bottom: 1px solid #1C7E7B;
+  border-bottom: 0.5px solid #1C7E7B;
 }
 
 #sidebar-menu-container {
@@ -36,9 +46,9 @@ aside {
 
 .sidebar-menu-item {
   background-color: rgb(209, 221, 215);
-  border: 1px solid #72A298;
+  border-bottom: 0.5px solid #72A298;
   text-align: center;
-  padding-top: 45%;
+  /* padding-top: 17% !important; */
 }
 
 .sidebar-menu-item:hover {
@@ -70,7 +80,7 @@ main {
 }
 
 #name-and-title {
-  
+  margin-top: 600px;
 }
 
 .ital {
@@ -78,14 +88,10 @@ main {
 }
 
 a {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: black;
-}
-
-#mission-statement {
-  text-align: center;
-  width: 40%;
-  font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
 }
 
 #sidebar-title {
@@ -94,6 +100,80 @@ a {
 }
 
 .sidebar-link {
+  margin-top: 13%;
   letter-spacing: 3px;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+#homepage-links {
+  margin-top: 400px;
+  letter-spacing: 4px;
+}
+#homepage-links span a:hover {
+  color: white;
+  font-style: italic;
+}
+
+.homepage-link-separator {
+  color: black;
+}
+
+#about {
+  margin-top: 600px;
+  text-align: center;
+  width: 100%;
+  padding-left: 20% !important;
+  padding-right: 40% !important;
+}
+
+#mission-container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#mission-statement {
+  text-align: center;
+  font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}
+
+#skills-container {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#skills-grid {
+  margin-top: 25%;
+  height: 70% !important;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#skills-title {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.skill-box {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-1 .skill-6 .skill-11 .skill-16 {
+  background-color: red;
+}
+
+.skill-2 .skill-7 .skill-12 .skill-13 {
+  background-color: yellow;
+}
+
+.skill-3 .skill-8 .skill-9 .skill-14 {
+  background-color: blue;
+}
+
+.skill-4 .skill-5  .skill-10 .skill-15 {
+  background-color: green;
 }

@@ -1,47 +1,42 @@
-import React, { Component } from 'react'
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import BurgerMenu from './BurgerMenu'
 
-class Home extends Component {
-  constructor(props) {
-    super(props)
-  }
+import Parallax from './Parallax'
+import { OnAtMostPhablet } from './root'
 
-  // componentWillReceiveProps(nextProps) {
-  //   console.log(`nextProps = `, nextProps)
-  // } 
+const Home = () => (
+  <main id='home'>
+    <div className='bg'></div>
+    <div className='parallax'>
+      <Parallax />
+      
+      <div id='name-and-title' className='content'>
+        <h1>Evan Reed</h1>
+        <p>Fullstack Developer</p>
+      </div>
 
-  render() {
-    return (
-      <main id='home'>
-        
-        <div className='bg'></div>
-        <div className='parallax'>
-          <div className='parallax-group'>
-            <div className='layer'></div>
-            <div className='layer'></div>
-            <div className='layer'></div>
-            <div className='layer'></div>
-            <div className='layer'></div>
-            <div className='layer fill'></div>
-          </div>
-          <div id='name-and-title' className='content'>
-            <h1>Evan Reed</h1>
-            <p>Fullstack Developer</p>
-          </div>
-          <div id='about' className='content'>
-            <p id='mission-statement' className='ital'>I strive to contribute to creative and intellectual communities through the toolsets of Software Engineering & Design.</p>
-          </div>
+      <div id='homepage-links' className='content'>
+        <span>
+          <Link to='/skills'>Overview</Link>
+        </span>
+        <span className='homepage-link-separator'> - </span>
+        <span>
+          <Link to='/projects'>Work</Link>
+        </span>
+        <span className='homepage-link-separator'> - </span>
+        <span>
+          <Link to='/contact'>Connect</Link>
+        </span>
+      </div>
+
+      <div id='about' className='content'>
+        <div id='mission-container'>
+          <p id='mission-statement' className='ital'>I strive to contribute to creative and intellectual communities through the toolsets of Software Engineering & Design.</p>
         </div>
-      </main>
-    )
-  }
-}
+      </div>
+    </div>
+  </main>
+)
 
 export default Home
-
-  // < div id = 'grid-container' >
-  //   <header></header>
-  //   <nav></nav>
-  //   <main></main>
-  //   <footer></footer>
-  // </div >  

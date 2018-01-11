@@ -26,11 +26,22 @@ module.exports = {
         path.resolve(__dirname, 'src'),
       ],
       use: [
-        require.resolve('style-loader'),
+        // require.resolve('style-loader'),
+        // {
+        //   loader: require.resolve('css-loader'),
+        //   options: {
+        //     importLoaders: 1
+        //   }
+        // },
+        'style-loader', 
+        { 
+          loader: 'css-loader',
+          options: { importLoaders: 1 }
+        },
         {
-          loader: require.resolve('css-loader'),
+          loader: 'postcss-loader',
           options: {
-            importLoaders: 1
+            config: { path: './postcss.config.js'}
           }
         }
       ]
