@@ -4,7 +4,7 @@ import { layoutGenerator } from 'react-break'
 
 import '../styles'
 import SideBar from './SideBar'
-import BurgerMenu from './BurgerMenu'
+import CustomBurger from './CustomBurger'
 import Home from './Home'
 import Skills from './Skills'
 import Projects from './Projects'
@@ -23,6 +23,10 @@ const OnAtMostPhablet = layout.isAtMost('phablet')
 const Root = () => (
   <BrowserRouter>
     <div id='root-child'>
+      <OnAtMostPhablet>
+        <Route render={props => <CustomBurger {...props} />} />
+      </OnAtMostPhablet>
+
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about' render={() => <Redirect to='/' />} />
@@ -35,11 +39,6 @@ const Root = () => (
       <OnAtLeastTablet>
         <Route component={SideBar} />
       </OnAtLeastTablet>
-
-      <OnAtMostPhablet>
-        <Route component={BurgerMenu} />
-      </OnAtMostPhablet>
-
     </div>
   </BrowserRouter>
 )

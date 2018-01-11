@@ -177,3 +177,50 @@ a {
 .skill-4 .skill-5  .skill-10 .skill-15 {
   background-color: green;
 }
+
+
+/*--------------------*/
+#custom-burger-container {
+  height: 8%;
+  width: 100% !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgb(235, 237, 234);
+  box-shadow: 0px 2px 12px 8px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr;
+}
+
+#burger-home {
+  /* background-color: red; */
+  /* border-right: 1px solid black; */
+}
+
+.burger-item {
+  /* background-color: blue; */
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.burger-item:active {
+  background-color: yellow;
+}
+
+.burger-item-icon {
+  width: 100%;
+  margin-left: 28%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.burger-item-text {
+  font-family: Arial;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+}

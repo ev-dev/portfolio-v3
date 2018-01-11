@@ -26,13 +26,6 @@ module.exports = {
         path.resolve(__dirname, 'src'),
       ],
       use: [
-        // require.resolve('style-loader'),
-        // {
-        //   loader: require.resolve('css-loader'),
-        //   options: {
-        //     importLoaders: 1
-        //   }
-        // },
         'style-loader', 
         { 
           loader: 'css-loader',
