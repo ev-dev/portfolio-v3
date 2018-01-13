@@ -1,0 +1,6 @@
+apps:
+  - script: ./server/index.js
+    name: 'portfolio-v3'
+    watch: true
+    env:
+      NODE_ENV: production

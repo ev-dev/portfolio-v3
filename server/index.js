@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path')
 const fs = require('fs')
 
+const PORT = process.env.NODE_ENV === 'production' ? 8000 : 3000
+
 express()
   .get('/bundle.js', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'bundle.js'))
@@ -20,8 +22,4 @@ express()
   .get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'))
   })
-  .listen(3000, () => {
-    console.log(`
-      Server listening on port 3000...
-    `)
-  })
+  .listen(PORT)
