@@ -14,19 +14,20 @@ import '../styles'
 
 const layout = layoutGenerator({
   mobile: 0,
-  phablet: 550,
-  tablet: 768,
+  phablet: 398,
+  tablet: 780,
   desktop: 992
 })
-const OnAtLeastTablet = layout.isAtLeast('tablet')
-const OnAtMostPhablet = layout.isAtMost('phablet')
+export const OnAtLeastTablet = layout.isAtLeast('tablet')
+export const OnAtMostTablet = layout.isAtMost('tablet')
+export const OnAtMostPhablet = layout.isAtMost('phablet')
 
 const Root = () => (
   <BrowserRouter>
     <div id='root-child'>
-      <OnAtMostPhablet>
+      <OnAtMostTablet>
         <Route render={props => <NavBar {...props} />} />
-      </OnAtMostPhablet>
+      </OnAtMostTablet>
 
       <Switch>
         <Route exact path='/' component={Home} />

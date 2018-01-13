@@ -1,5 +1,5 @@
 #nav-container {
-  height: 8%;
+  height: 6vh;
   width: 100% !important;
   position: fixed;
   top: 0;
@@ -13,32 +13,117 @@
   grid-template-columns: 1.5fr 2fr 2fr 2fr 2fr;
 }
 
+@media only screen and (min-width: 780px) and (max-width: 992px) {
+  .nav-item {
+    padding-top: 2vh;
+    text-align: center;
+  }
+
+  .nav-item-icon {
+    display: inline-block;
+    margin-right: 5%;
+  }
+
+  .nav-item-text {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  #nav-home {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #nav-e-icon {
+    height: 30px;
+    margin-top: 1.3vh;
+    margin-left: 39%;
+  }
+
+  #nav-home-text {
+    margin-top: 2vh;
+    margin-left: -53%;
+    padding: 0;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .nav-item {
+    padding-top: 1.5vh;
+    text-align: center;
+  }
+
+  .nav-item-icon {
+    width: 100%;
+  }
+
+  .nav-item-text {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0.75em;
+  }
+
+  #nav-home {
+    padding-top: 0.5vh;
+    text-align: center;
+  }
+
+  #nav-e-icon {
+    height: 30px;
+    /* width: 100%; */
+    /* margin-top: 1.2vh;
+    margin-left: 60%; */
+  }
+
+  #nav-home-text {
+    /* margin-top: 2vh;
+    margin-left: -60%; */
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .nav-item {
+    padding-top: 1vh;
+  }
+
+  #nav-home {
+    padding-top: 0.6vh;
+  }
+
+  #nav-e-icon {
+    height: 2em;
+  }
+
+  #nav-home-text {
+    display: none;
+  }
+}
+
 #nav-home {
   /* background-color: red; */
   /* border-right: 1px solid black; */
 }
 
 .nav-item {
-  /* background-color: blue; */
-  text-align: center;
   border-left: 0.25px solid rgb(127, 129, 126);
-  /* border-right: 0.25px solid black; */
 }
 
 .nav-item:active {
   background-color: yellow;
 }
 
-.nav-item-icon {
-  width: 100%;
-  margin-left: 28%;
-  margin-right: 25%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
 .nav-item-text {
   font-family: Arial;
-  font-size: 0.75em;
   letter-spacing: 2px;
 }

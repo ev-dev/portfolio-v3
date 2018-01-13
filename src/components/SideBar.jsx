@@ -17,33 +17,38 @@ const SideBar = () => (
     </div>
     <div id='sidebar-menu-container'>
       <Link to='/about' className='sidebar-menu-item'>
-        <p className='sidebar-link'>
+        <i className='fas fa-2x fa-home sidebar-icon' />
+        <p className='sidebar-menu-item-text'>
           About
         </p>
       </Link>
       <Link to='/skills' className='sidebar-menu-item'>
-        <span className='sidebar-item-container'>
-          <i className='fas fa-lg fa-tasks sidebar-icon' />
-          <p className='sidebar-link'>
-            Skills
-          </p>
-        </span>
+        <i className='fas fa-2x fa-tasks sidebar-icon' />
+        <p className='sidebar-menu-item-text'>
+          Skills
+        </p>
       </Link>
       <Link to='/projects' className='sidebar-menu-item'>
-        <p className='sidebar-link'>
+        <i className='fas fa-2x fa-code sidebar-icon' />
+        <p className='sidebar-menu-item-text'>
           Projects
         </p>
       </Link>
       <Link to='/blog' className='sidebar-menu-item'>
-        <p className='sidebar-link'>
+        <i className='fas fa-2x fa-newspaper sidebar-icon' />
+        <p className='sidebar-menu-item-text'>
           Blog
         </p>
       </Link>
-      <Link to='/contact' id='sidebar-footer' className='sidebar-menu-item'>
-        <p className='sidebar-link'>
+      <Link to='/contact' className='sidebar-menu-item'>
+        <i className='fas fa-2x fa-user-plus sidebar-icon' />
+        <p className='sidebar-menu-item-text'>
           Contact
         </p>
       </Link>
+    </div>
+    <div id='sidebar-footer'>
+    
     </div>
   </aside>
 )

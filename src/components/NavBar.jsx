@@ -22,40 +22,37 @@ class NavBar extends Component {
   
   render() {
     const { route } = this.state
-    console.log('route state', route)
     return (
       <div id='nav-container'>
-        <Link to='/' id='nav-home' className='nav-item'>
-          <i className='fas fa-lg fa-home nav-item-icon' />
-          <text className='nav-item-text'>
+        <Link to='/' id='nav-home'>
+          <img src='e-icon.svg' id='nav-e-icon' />
+          <p id='nav-home-text'>
             Home
-          </text>
+          </p>
         </Link>
         <Link to='/skills' className='nav-item'>
-          <div>
-            <i className='fas fa-lg fa-tasks nav-item-icon' />
-            <span className='nav-item-text'>
-              Skills
-            </span>
-          </div>
+          <i className='fas fa-fw fa-tasks nav-item-icon' />
+          <p className='nav-item-text'>
+            Skills
+          </p>
         </Link>
         <Link to='/projects' className='nav-item'>
-          <i className='fas fa-lg fa-code nav-item-icon' />
-          <text className='nav-item-text'>
+          <i className='fas fa-fw fa-code nav-item-icon' />
+          <p className='nav-item-text'>
             Projects
-          </text>
+          </p>
         </Link>
         <Link to='/blog' className='nav-item'>
-          <i className='fas fa-lg fa-newspaper nav-item-icon' />
-          <text className='nav-item-text'>
+          <i className='fas fa-fw fa-newspaper nav-item-icon' />
+          <p className='nav-item-text'>
             Blog
-          </text>
+          </p>
         </Link>
         <Link to='/contact' className='nav-item'>
-          <i className='fas fa-lg fa-user-plus nav-item-icon' />
-          <text className='nav-item-text'>
+          <i className='fas fa-fw fa-user-plus nav-item-icon' />
+          <p className='nav-item-text'>
             Contact
-          </text>
+          </p>
         </Link>
       </div>
     )

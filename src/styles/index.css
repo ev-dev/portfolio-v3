@@ -7,13 +7,13 @@ html, body, #root, #root-child {
   padding: 0;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 992px) {
   #root-child {
     width: 100vw !important;
   }
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 992px) {
   #root-child {
     background-color: black;
     display: grid;
