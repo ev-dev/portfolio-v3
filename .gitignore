@@ -3,5 +3,6 @@ node_modules
 .esm-cache
 .vscode
 .user-config*
+src/.vscode
 
 dist/bundle*
