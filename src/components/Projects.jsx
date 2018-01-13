@@ -1,13 +1,25 @@
 import React from 'react'
 
-import Stars from './Stars'
+import SingleProject from './SingleProject'
+import { projectsInfo } from '../data'
+
 import '../styles/projects'
+import '../styles/stars'
 
 const Projects = () => (
-  <div className=''>
-    <Stars />
-    <h1>Projects</h1>
-  </div>
+  <main>
+    <div id='stars' />
+    <div id='stars2' />
+    <div id='stars3' />
+    <div id='projects-container'>
+      <h1 id='projects-title'>Projects</h1>
+      <div id='projects-grid'>
+        {projectsInfo.map(project => (
+          <SingleProject key={project.name} project={project} />
+        ))}
+      </div>
+    </div>
+  </main>
 )
 
 export default Projects
