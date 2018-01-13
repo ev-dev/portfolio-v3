@@ -21,6 +21,7 @@ const layout = layoutGenerator({
 export const OnAtLeastTablet = layout.isAtLeast('tablet')
 export const OnAtMostTablet = layout.isAtMost('tablet')
 export const OnAtMostPhablet = layout.isAtMost('phablet')
+export const OnAtLeastDesktop = layout.isAtLeast('desktop')
 
 const Root = () => (
   <BrowserRouter>
@@ -38,9 +39,9 @@ const Root = () => (
         <Route exact path='/contact' component={Contact} />
       </Switch>
       
-      <OnAtLeastTablet>
+      <OnAtLeastDesktop>
         <Route component={SideBar} />
-      </OnAtLeastTablet>
+      </OnAtLeastDesktop>
     </div>
   </BrowserRouter>
 )

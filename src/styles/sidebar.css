@@ -11,7 +11,7 @@ aside {
 
 /* Photo & Title */
 #sidebar-photo-container {
-  background-color: rgb(235, 237, 234);
+  background-color: rgb(209, 221, 215);
   border-bottom: 0.5px solid #1C7E7B;
 }
 
@@ -44,7 +44,7 @@ aside {
 }
 
 .sidebar-menu-item {
-  background-color: rgb(209, 221, 215);
+  background-color: rgb(235, 237, 234);
   border-bottom: 0.5px solid #72A298;
   text-align: center;
   padding-top: 1.5em;
