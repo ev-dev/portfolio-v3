@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+import '../styles/sidebar'
 
 const SideBar = () => (
   <aside>
@@ -46,4 +48,4 @@ const SideBar = () => (
   </aside>
 )
 
-export default withRouter(SideBar)
+export default SideBar

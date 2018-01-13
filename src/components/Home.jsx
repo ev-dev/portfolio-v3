@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BurgerMenu from './BurgerMenu'
 
 import Parallax from './Parallax'
 import { OnAtMostPhablet } from './root'
+import '../styles/home'
 
 const Home = () => (
   <main id='home'>

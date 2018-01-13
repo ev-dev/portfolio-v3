@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../styles/skills'
+
 const Skills = () => (
   <div id='skills-container'>
     <h1 id='skills-title'>Skills</h1>

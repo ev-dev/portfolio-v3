@@ -1,0 +1,35 @@
+#name-and-title {
+  margin-top: 600px;
+}
+
+#homepage-links {
+  margin-top: 400px;
+  letter-spacing: 4px;
+}
+
+#homepage-links span a:hover {
+  color: white;
+  font-style: italic;
+}
+
+.homepage-link-separator {
+  color: black;
+}
+
+#about {
+  margin-top: 600px;
+  text-align: center;
+  width: 100%;
+  padding-left: 20% !important;
+  padding-right: 40% !important;
+}
+
+#mission-container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#mission-statement {
+  text-align: center;
+  font-family: "Cambria, Cochin, Georgia, Times, Times New Roman, serif";
+}

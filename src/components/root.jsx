@@ -2,14 +2,15 @@ import React from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import { layoutGenerator } from 'react-break'
 
-import '../styles'
 import SideBar from './SideBar'
-import NavMenu from './NavMenu'
+import NavBar from './NavBar'
 import Home from './Home'
 import Skills from './Skills'
 import Projects from './Projects'
 import Blog from './Blog'
 import Contact from './Contact'
+
+import '../styles'
 
 const layout = layoutGenerator({
   mobile: 0,
@@ -24,7 +25,7 @@ const Root = () => (
   <BrowserRouter>
     <div id='root-child'>
       <OnAtMostPhablet>
-        <Route render={props => <NavMenu {...props} />} />
+        <Route render={props => <NavBar {...props} />} />
       </OnAtMostPhablet>
 
       <Switch>
