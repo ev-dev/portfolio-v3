@@ -12,7 +12,9 @@ const Projects = () => (
     <div id='stars2' />
     <div id='stars3' />
     <div id='projects-container'>
-      <h1 id='projects-title'>Projects</h1>
+      <div className='star-title-container projects-title'>
+        <span className='star-title'>Projects</span>
+      </div>
       <div id='projects-grid'>
         {projectsInfo.map(project => (
           <SingleProject key={project.name} project={project} />

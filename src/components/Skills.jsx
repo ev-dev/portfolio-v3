@@ -10,7 +10,9 @@ const Skills = () => (
     <div id='stars2' />
     <div id='stars3' />
     <div id='skills-container'>
-      <h1 id='skills-title'>Skills</h1>
+      <div className='star-title-container skills-title'>
+        <span className='star-title'>Skills</span>
+      </div>
       <div id='skills-grid'>
         {devLogoUrls.map((skill, i) => (
           <div className={`skill-box-parent`} key={i}>

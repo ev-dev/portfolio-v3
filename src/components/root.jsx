@@ -9,7 +9,6 @@ import Skills from './Skills'
 import Projects from './Projects'
 import Blog from './Blog'
 import Contact from './Contact'
-import Stars from './Stars'
 
 import '../styles'
 
@@ -36,7 +35,7 @@ const Root = () => (
         <Route exact path='/about' render={() => <Redirect to='/' />} />
         <Route exact path='/skills' component={Skills} />
         <Route exact path='/projects' component={Projects} />
-        <Route exact path='/blog' component={Stars} />
+        <Route exact path='/blog' component={Blog} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
       

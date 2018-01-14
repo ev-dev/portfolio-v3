@@ -8,6 +8,11 @@ class SingleProject extends Component {
     }
   }
 
+  componentDidCatch(error, errorInfo) {
+    console.error(error)
+    console.error(errorInfo)
+  }
+
   expandProject = () => {
     this.setState(state => ({
       isCollapsed: !this.state.isCollapsed
@@ -18,56 +23,70 @@ class SingleProject extends Component {
     const { isCollapsed } = this.state
     const { name, description, features, stack, link, repo } = this.props.project
     return (
-      <div 
-        id='single-project-container'
+      <div
+        className='single-project-container'
         onClick={this.expandProject}
       >
-        <h1 id='project-name'>{name}</h1>
-        <h3 id='project-description'>{description}</h3>
+        <h1 className='project-name'>{name}</h1>
+        <h3 className='project-description'>{description}</h3>
         
         {isCollapsed
           ?
-            <button
-              className='expand-project-btn'
-              onClick={this.expandProject}>
-              {/* <i className='fa fas' /> */}
-              \/ Expand \/
-            </button>
+            (
+              <div
+                className='expand-project-btn'
+                onClick={this.expandProject}
+              >
+                <h6 className='show-details-text'>Show Details</h6>
+                <span className='arrow-icon-container'>
+                  <i className='fas fa-lg fa-angle-double-down' />
+                </span>
+              </div>
+            )
           :
             ( 
-              <div>
-                <h5 id='project-features-title'>Features:</h5>
-                <ul id='project-features-list'>
+              <div className='extended-details-container'>
+                <h5 className='project-detail-title'>Features:</h5>
+                <ul className='project-detail-content project-features-list'>
                   {features.map(feature => (
                     <li 
                       key={feature}
-                      id='project-features-list-item'
+                      className='project-features-list-item'
                     >
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <h5 id='project-tech-title'>Technologies:</h5>
-                <ul id='project-tech-list'>
+                <h5 className='project-detail-title'>Technologies:</h5>
+                <ul className='project-detail-content project-tech-list'>
                   {stack.map(tech => (
                     <li 
                       key={tech}
-                      id='project-tech-list-item'  
+                      className='project-tech-list-item'  
                     >
                       {tech}
                     </li>
                   ))}
                 </ul>
-                <h5 id='project-link-title'>Link:</h5>
-                <p id='project-link-link'>{link}</p>
-                <h5 id='project-repo-title'>Repository:</h5>
-                <p id='project-repo-link'>{repo}</p>
-                <button
+                <div className='link-container'>
+                  <div>
+                    <h5 className='project-detail-link-title'>Site:</h5>
+                    <a href={link} className='project-detail-content-link'>{link}</a>
+                  </div>
+                  <div>
+                    <h5 className='project-detail-link-title'>Repository:</h5>
+                    <a href={repo} className='project-detail-content-link'>{repo}</a>
+                  </div>
+                </div>
+                <div
                   className='expand-project-btn'
-                  onClick={this.expandProject}>
-                  {/* <i className='fa fas' /> */}
-                  /\ Collapse /\
-                </button>
+                  onClick={this.expandProject}
+                >
+                  <h6 className='show-details-text'>Collapse</h6>
+                  <span className='arrow-icon-container'>
+                    <i className='fas fa-lg fa-angle-double-up' />
+                  </span>
+                </div>
               </div>
             )}
       </div>

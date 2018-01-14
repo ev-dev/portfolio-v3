@@ -21,7 +21,7 @@ export const devLogoUrls = [
 
 export const projectsInfo = [
   {
-    name: 'ExampleJS',
+    name: 'nGage Platform',
     description: 'Developer tool and documentation assistant for quickly reviewing specific examples of a given search',
     features: [
       'In-Browser IDE with built-in REPL',
@@ -59,7 +59,7 @@ export const projectsInfo = [
     repo: 'https://github.com/ev-dev/example-js'
   },
   {
-    name: 'ExampleJS',
+    name: 'Project Consilience',
     description: 'Developer tool and documentation assistant for quickly reviewing specific examples of a given search',
     features: [
       'In-Browser IDE with built-in REPL',
@@ -78,7 +78,7 @@ export const projectsInfo = [
     repo: 'https://github.com/ev-dev/example-js'
   },
   {
-    name: 'ExampleJS',
+    name: 'GraphQL Schema Mapper',
     description: 'Developer tool and documentation assistant for quickly reviewing specific examples of a given search',
     features: [
       'In-Browser IDE with built-in REPL',

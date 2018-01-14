@@ -22,7 +22,8 @@ html, body, #root, #root-child {
 }
 
 main {
-  background-color: darkorange;
+  overflow: auto !important;
+  background-color: #1A7370;
 }
 
 
@@ -36,3 +37,15 @@ a {
   text-decoration: none;
   color: black;
 }
+/* 
+.star-title-container {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.star-title {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
