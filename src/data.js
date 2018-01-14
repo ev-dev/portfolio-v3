@@ -22,22 +22,21 @@ export const devLogoUrls = [
 export const projectsInfo = [
   {
     name: 'nGage Platform',
-    description: 'Developer tool and documentation assistant for quickly reviewing specific examples of a given search',
+    description: 'Collaborative presentation platform designed with educators in mind',
     features: [
-      'In-Browser IDE with built-in REPL',
-      'Authenticated users can submit their own example snippets that can be voted and commented on',
-      'Verified examples from popular sources (Mozilla Developer Network, StackOverflow, W3C)'
+      'Modern WYSIWYG Editor',
+      'Real-time classrooms with chat',
+      'Quiz Slides with real-time analytics',
+      'Upload a 3D Model for VR enabled slides'
     ],
     stack: [
       'React',
       'Redux',
-      'GraphQL',
-      'PostgreSQL',
-      'ExpressJS',
-      'Cheerio'
+      'Firebase',
+      'A-Frame'
     ],
-    link: 'http://examplejs.ev-dev.com',
-    repo: 'https://github.com/ev-dev/example-js'
+    link: 'http://ngage-platform.com',
+    repo: 'https://github.com/seal-team/Ngage'
   },
   {
     name: 'ExampleJS',
@@ -60,41 +59,35 @@ export const projectsInfo = [
   },
   {
     name: 'Project Consilience',
-    description: 'Developer tool and documentation assistant for quickly reviewing specific examples of a given search',
+    description: 'Consilience is referred to as the unity of knowledge by famous biologist E.O. Wilson. This project aims to embody that sentiment by aggregating a plethora of scientific research journals and prepublishers so that research practitioners can get accurate depictions of the current state of a particular field of study. The project also intends to provide an immersive data visualization experience for an even more intuitive understanding of scientific research at large',
     features: [
-      'In-Browser IDE with built-in REPL',
-      'Authenticated users can submit their own example snippets that can be voted and commented on',
-      'Verified examples from popular sources (Mozilla Developer Network, StackOverflow, W3C)'
+      'Immersive Data Visualization',
+      'Sentiment Analysis of Publications',
+      'Researcher Profiling'
     ],
     stack: [
       'React',
-      'Redux',
       'GraphQL',
+      'Apollo',
       'PostgreSQL',
-      'ExpressJS',
-      'Cheerio'
+      'ExpressJS'
     ],
-    link: 'http://examplejs.ev-dev.com',
-    repo: 'https://github.com/ev-dev/example-js'
+    link: 'http://consilience.ev-dev.com',
+    repo: 'https://github.com/ev-dev/consilience'
   },
   {
     name: 'GraphQL Schema Mapper',
-    description: 'Developer tool and documentation assistant for quickly reviewing specific examples of a given search',
+    description: 'Map schemas written in the GraphQL Schema Definition Language to actual database models',
     features: [
-      'In-Browser IDE with built-in REPL',
-      'Authenticated users can submit their own example snippets that can be voted and commented on',
-      'Verified examples from popular sources (Mozilla Developer Network, StackOverflow, W3C)'
+      'Write schemas one time using the GraphQL SDL',
+      'Connect with popular DBs'
     ],
     stack: [
-      'React',
-      'Redux',
-      'GraphQL',
-      'PostgreSQL',
-      'ExpressJS',
-      'Cheerio'
+      'GraphQL.js',
+      'Apollo Tools'
     ],
-    link: 'http://examplejs.ev-dev.com',
-    repo: 'https://github.com/ev-dev/example-js'
+    link: 'https://npmjs.com/graphql-schema-mapper',
+    repo: 'https://github.com/ev-dev/graphql-schema-mapper'
   }
 ]
 
